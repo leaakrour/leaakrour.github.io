@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Léa Akrour - Software Engineer</title>
+<meta name="description" content="Léa Akrour - Software Engineer, Grenoble INP - Ensimag 2026. Backend, distributed systems and low-level programming.">
+<meta name="author" content="Léa Akrour">
+<meta name="theme-color" content="#F1E7D6">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Léa Akrour - Software Engineer">
+<meta property="og:description" content="Software Engineer, Grenoble INP - Ensimag 2026. Backend, distributed systems and low-level programming.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23FFD9D2'/><stop offset='.5' stop-color='%23E6DBFB'/><stop offset='1' stop-color='%23D3E9FA'/></linearGradient></defs><rect width='64' height='64' rx='14' fill='url(%23g)'/><text x='32' y='45' font-family='Segoe UI,Helvetica,sans-serif' font-size='30' font-weight='700' fill='%232B2440' text-anchor='middle'>LA</text></svg>">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Must sit outside the sticky header: an anchor inside a stuck element is
+     already in the viewport, so the browser skips the scroll entirely. -->
+<div id="top" tabindex="-1"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="aurora" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="Léa Akrour - back to top">
+      <span class="logo-mark">LA</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#about"><span class="num">01.</span>About</a></li>
+        <li><a href="#experience"><span class="num">02.</span>Experience</a></li>
+        <li><a href="#projects"><span class="num">03.</span>Projects</a></li>
+        <li><a href="#skills"><span class="num">04.</span>Skills</a></li>
+        <li><a href="#certifications"><span class="num">05.</span>Certifications</a></li>
+        <li><a href="#contact"><span class="num">06.</span>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress-bar"></span></div>
+</header>
+
+<div class="nav-backdrop" hidden></div>
+
+<main id="main">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" aria-labelledby="hero-name">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="hero-hi" data-reveal>Hi, my name is</p>
+        <h1 class="hero-name" id="hero-name" data-reveal>Léa Akrour</h1>
+        <p class="hero-tagline" data-reveal>I enjoy building software and figuring out how things work.</p>
+        <p class="hero-sub" data-reveal>
+          Software Engineer · Grenoble INP&nbsp;-&nbsp;Ensimag&nbsp;2026 · Based in France.
+        </p>
+
+        <div class="hero-actions" data-reveal>
+          <a class="btn btn-primary" href="mailto:lea.akrour04@gmail.com">Get in touch</a>
+          <a class="btn btn-ghost" href="https://github.com/leaakrour" target="_blank" rel="noopener noreferrer">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/l%C3%A9a-akrour-53918738a" target="_blank" rel="noopener noreferrer">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.4 9.5h5.16V21H2.4V9.5Zm7.2 0h4.95v1.57h.07c.69-1.24 2.38-2.55 4.9-2.55 5.24 0 6.21 3.3 6.21 7.6V21h-5.16v-4.82c0-1.15-.02-2.63-1.66-2.63-1.67 0-1.93 1.25-1.93 2.55V21H9.6V9.5Z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <figure class="hero-figure" data-reveal>
+        <img src="assets/Portfolio_illustration.png" width="1374" height="1145" decoding="async" fetchpriority="high"
+             alt="Illustration of Léa at a desk, coding on a laptop beside books on JavaScript, React and HTML &amp; CSS.">
+      </figure>
+    </div>
+
+    <a class="scroll-hint" href="#about">
+      <span class="scroll-hint-label">Scroll</span>
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ==================== ABOUT / EDUCATION ==================== -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="wrap">
+      <h2 class="section-title" id="about-title" data-reveal><span class="num">01.</span>About</h2>
+
+      <ol class="timeline">
+        <li class="tl-item" data-reveal>
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="org-logo org-logo-sm" data-org="ensimag" aria-hidden="true">ENS</span>
+          <span class="tl-when">2023&nbsp;-&nbsp;2026</span>
+          <span class="tl-what">Grenoble INP&nbsp;-&nbsp;Ensimag</span>
+          <span class="tl-note">
+            Engineering degree, Computer Science &amp; Applied Mathematics.
+          </span>
+        </li>
+        <li class="tl-item" data-reveal>
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="org-logo org-logo-sm org-logo-wide" data-org="mcmaster" aria-hidden="true">McM</span>
+          <span class="tl-when">Jan&nbsp;-&nbsp;May 2025</span>
+          <span class="tl-what">McMaster University</span>
+          <span class="tl-note">
+            Academic exchange in Computer Science, Faculty of Engineering, Canada.
+          </span>
+        </li>
+        <li class="tl-item" data-reveal>
+          <span class="tl-dot" aria-hidden="true"></span>
+          <span class="org-logo org-logo-sm" data-org="cpge" aria-hidden="true">MP</span>
+          <span class="tl-when">2020&nbsp;-&nbsp;2023</span>
+          <span class="tl-what">CPGE MPSI&nbsp;/&nbsp;MP</span>
+          <span class="tl-note">
+            Preparatory program in mathematics and physics for engineering school entrance exams.
+            Admitted to Grenoble INP&nbsp;-&nbsp;Ensimag.
+          </span>
+        </li>
+      </ol>
+
+      <div class="lang-block">
+        <h3 class="lang-title" data-reveal>Languages</h3>
+        <ul class="lang-row">
+          <!-- Wording and order as LinkedIn renders them in English. -->
+          <li data-reveal>
+            <span class="lang-name">English</span>
+            <span class="lang-level">Full professional proficiency</span>
+          </li>
+          <li data-reveal>
+            <span class="lang-name">French</span>
+            <span class="lang-level">Native or bilingual proficiency</span>
+          </li>
+          <li data-reveal>
+            <span class="lang-name">German</span>
+            <span class="lang-level">Limited working proficiency</span>
+          </li>
+          <li data-reveal>
+            <span class="lang-name">Spanish</span>
+            <span class="lang-level">Elementary proficiency</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience" class="section" aria-labelledby="exp-title">
+    <div class="wrap">
+      <h2 class="section-title" id="exp-title" data-reveal><span class="num">02.</span>Experience</h2>
+
+      <ol class="exp-list">
+        <li class="exp-item" data-reveal>
+          <div class="exp-top">
+            <span class="org-logo" data-org="datadog" aria-hidden="true">DD</span>
+            <div class="exp-head">
+              <h3 class="exp-role">
+                Software Engineer Intern <span class="at">@</span>
+                <span class="exp-org">Datadog</span>
+              </h3>
+              <p class="exp-when">
+                <time datetime="2026-02">Feb 2026</time> - <time datetime="2026-08">Aug 2026</time>
+              </p>
+            </div>
+          </div>
+          <p class="exp-team">On-Call team</p>
+          <ul class="exp-points">
+            <li>
+              Designed and shipped a <strong>resource-tagging feature</strong> for On-Call:
+              <code>key:value</code> tags on Schedules and Escalation Policies, with boolean AND/OR
+              filtering, PostgreSQL JSONB + GIN-indexed storage, audit trail history, and full test
+              coverage - validated in production via dogfooding with the Incident Management team.
+            </li>
+            <li>
+              Designed and implemented <strong>token-based email verification</strong> for On-Call
+              notifications, closing a security gap around unproven addresses.
+            </li>
+            <li>
+              Contributed to ad hoc backend/frontend/incident-response tickets, joined
+              <strong>business-hours on-call rotations</strong>, and worked daily with AI-assisted
+              development tools.
+            </li>
+          </ul>
+          <ul class="tag-row">
+            <li class="tag">Go</li><li class="tag">TypeScript</li><li class="tag">GitHub</li>
+            <li class="tag">Full-stack development</li><li class="tag">REST / JSON:API</li>
+          </ul>
+        </li>
+
+        <li class="exp-item" data-reveal>
+          <div class="exp-top">
+            <span class="org-logo org-logo-wide" data-org="leon-berard" aria-hidden="true">CLB</span>
+            <div class="exp-head">
+              <h3 class="exp-role">
+                Engineering Intern, ML / Deep Learning <span class="at">@</span>
+                <span class="exp-org">Centre Léon Bérard</span>
+              </h3>
+              <p class="exp-when">
+                <time datetime="2025-06">Jun 2025</time> - <time datetime="2025-08">Aug 2025</time>
+              </p>
+            </div>
+          </div>
+          <p class="exp-team">Cancer research centre · medical physics</p>
+          <ul class="exp-points">
+            <li>
+              Developed an AI model to predict radiotherapy
+              <strong>Delivery Quality Assurance (DQA)</strong> results from treatment plan
+              complexity indices, using a cleaned and anonymized database of 5,000+ EPID quality
+              control records.
+            </li>
+            <li>
+              Built and benchmarked <strong>90+ machine learning models</strong> (classification
+              and regression) with Scikit-learn, then optimized the best performer through
+              hyperparameter tuning, normalization, and threshold adjustment.
+            </li>
+            <li>
+              Evaluated performance via cross-validation and multiple metrics (F1-score, precision,
+              recall, ROC-AUC), and explored a <strong>deep learning approach</strong> with
+              TensorFlow to refine predictions.
+            </li>
+          </ul>
+          <ul class="tag-row">
+            <li class="tag">Python</li><li class="tag">Scikit-learn</li><li class="tag">TensorFlow</li>
+            <li class="tag">Pandas</li><li class="tag">Machine learning</li>
+            <li class="tag">Deep learning</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" class="section" aria-labelledby="proj-title">
+    <div class="wrap">
+      <h2 class="section-title" id="proj-title" data-reveal><span class="num">03.</span>Projects</h2>
+      <p class="section-lead" data-reveal>
+        A selection of things I have built: distributed systems, low-level C, databases and
+        algorithms.
+      </p>
+
+      <ul class="project-grid">
+
+        <!-- 1. Glider pipeline -->
+        <li class="card" data-reveal>
+          <div class="card-art">
+            <svg class="art" viewBox="0 0 320 132" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+              <path class="art-flow" d="M14 104 C 76 104, 74 44, 132 44 S 206 96, 250 52" />
+              <g class="art-node">
+                <rect x="24" y="86" width="26" height="26" rx="7"/>
+                <rect x="110" y="26" width="26" height="26" rx="7"/>
+                <rect x="196" y="72" width="26" height="26" rx="7"/>
+              </g>
+              <circle class="art-dot art-dot-1" cx="70" cy="80" r="5"/>
+              <circle class="art-dot art-dot-2" cx="160" cy="58" r="5"/>
+              <circle class="art-dot art-dot-3" cx="224" cy="80" r="5"/>
+              <path class="art-plane" d="M246 26 l58 24 -58 24 14-24z"/>
+              <path class="art-hair" d="M14 120h292"/>
+            </svg>
+            <a class="card-link" href="https://github.com/leaakrour/realtime-glider-tracking-pipeline" target="_blank" rel="noopener noreferrer" aria-label="Real-Time Glider Tracking Pipeline on GitHub">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="https://github.com/leaakrour/realtime-glider-tracking-pipeline" target="_blank" rel="noopener noreferrer">Real-Time Glider Tracking Pipeline</a>
+            </h3>
+            <p class="card-desc">
+              Distributed pipeline (Kafka → Spark → MongoDB) tracking gliders in real time via the
+              Open Glider Network, deployed on Kubernetes with Terraform-provisioned GCP infra.
+            </p>
+            <ul class="stack-row">
+              <li>Kafka</li><li>Spark</li><li>MongoDB</li><li>Kubernetes</li><li>Docker</li>
+              <li>GCP</li><li>Terraform</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- 2. C GUI framework -->
+        <li class="card" data-reveal>
+          <div class="card-art">
+            <svg class="art" viewBox="0 0 320 132" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+              <rect class="art-frame" x="34" y="18" width="252" height="96" rx="12"/>
+              <path class="art-frame-line" d="M34 46h252"/>
+              <circle class="art-dot-1" cx="52" cy="32" r="5"/>
+              <circle class="art-dot-2" cx="68" cy="32" r="5"/>
+              <circle class="art-dot-3" cx="84" cy="32" r="5"/>
+              <rect class="art-panel" x="48" y="60" width="66" height="40" rx="8"/>
+              <path class="art-bar" d="M130 68h96M130 84h62"/>
+              <rect class="art-btn" x="130" y="94" width="58" height="14" rx="7"/>
+              <rect class="art-btn-alt" x="196" y="94" width="40" height="14" rx="7"/>
+            </svg>
+            <a class="card-link" href="https://github.com/leaakrour/c-gui-framework" target="_blank" rel="noopener noreferrer" aria-label="C GUI Framework on GitHub">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="https://github.com/leaakrour/c-gui-framework" target="_blank" rel="noopener noreferrer">C GUI Framework</a>
+            </h3>
+            <p class="card-desc">
+              Built a framework in C that lets developers create graphical applications (windows,
+              buttons, images) for Linux, complete with automated tests and a CI pipeline to catch
+              bugs before deployment.
+            </p>
+            <ul class="stack-row">
+              <li>C</li><li>CMake</li><li>Doxygen</li><li>Testing</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- 3. Auction house database -->
+        <li class="card" data-reveal>
+          <div class="card-art">
+            <svg class="art" viewBox="0 0 320 132" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+              <g class="art-db">
+                <ellipse cx="86" cy="34" rx="44" ry="14"/>
+                <path d="M42 34v56c0 7.7 19.7 14 44 14s44-6.3 44-14V34"/>
+                <path d="M42 62c0 7.7 19.7 14 44 14s44-6.3 44-14"/>
+              </g>
+              <path class="art-link" d="M134 62h34"/>
+              <g class="art-rows">
+                <rect x="172" y="30" width="112" height="16" rx="6"/>
+                <rect x="172" y="54" width="112" height="16" rx="6"/>
+                <rect x="172" y="78" width="112" height="16" rx="6"/>
+              </g>
+              <rect class="art-row-hi" x="172" y="54" width="62" height="16" rx="6"/>
+              <circle class="art-dot-2" cx="292" cy="38" r="5"/>
+              <circle class="art-dot-3" cx="292" cy="86" r="5"/>
+            </svg>
+            <a class="card-link" href="https://github.com/leaakrour/auction-house-database" target="_blank" rel="noopener noreferrer" aria-label="Auction House Database on GitHub">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="https://github.com/leaakrour/auction-house-database" target="_blank" rel="noopener noreferrer">Auction House Database</a>
+            </h3>
+            <p class="card-desc">
+              Designed the relational database for an online auction platform - from
+              entity-relationship modeling to a normalized SQL schema on Oracle, with
+              concurrency-safe transactions for bidding and auction resolution, plus a Java demo
+              app to exercise it.
+            </p>
+            <ul class="stack-row"><li>Oracle</li><li>SQL</li><li>Java</li><li>JDBC</li></ul>
+          </div>
+        </li>
+
+        <!-- 4. Polygon inclusion -->
+        <li class="card" data-reveal>
+          <div class="card-art">
+            <svg class="art" viewBox="0 0 320 132" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+              <polygon class="art-poly-1" points="26,102 44,26 148,14 190,66 132,118"/>
+              <polygon class="art-poly-2" points="54,94 68,40 136,32 166,68 122,104"/>
+              <polygon class="art-poly-3" points="80,86 90,54 126,50 144,72 114,92"/>
+              <polygon class="art-poly-4" points="212,96 226,36 296,50 284,106"/>
+              <circle class="art-dot-1" cx="110" cy="72" r="4.5"/>
+              <circle class="art-dot-2" cx="254" cy="72" r="4.5"/>
+            </svg>
+            <a class="card-link" href="https://github.com/leaakrour/polygon-inclusion-detection" target="_blank" rel="noopener noreferrer" aria-label="Polygon Inclusion Detection on GitHub">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="https://github.com/leaakrour/polygon-inclusion-detection" target="_blank" rel="noopener noreferrer">Polygon Inclusion Detection</a>
+            </h3>
+            <p class="card-desc">
+              A computational geometry algorithm that detects inclusion relationships between nested
+              polygons and reconstructs the containment hierarchy of a set of shapes.
+            </p>
+            <ul class="stack-row"><li>Python</li><li>Geometry</li><li>Algorithms</li></ul>
+          </div>
+        </li>
+
+        <!-- 5. Firefighter robots -->
+        <li class="card" data-reveal>
+          <div class="card-art">
+            <svg class="art" viewBox="0 0 320 132" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+              <path class="art-grid" d="M20 30h280M20 62h280M20 94h280M84 12v112M148 12v112M212 12v112M276 12v112"/>
+              <path class="art-path" d="M52 94 H116 V62 H212 V34"/>
+              <g class="art-robot">
+                <rect x="38" y="80" width="28" height="24" rx="7"/>
+                <path d="M52 72v8"/>
+              </g>
+              <circle class="art-eye" cx="46" cy="92" r="3"/>
+              <circle class="art-eye" cx="58" cy="92" r="3"/>
+              <path class="art-fire" d="M212 12c10 12 16 18 16 28a16 16 0 0 1-32 0c0-6 4-10 8-16 2 8 8 6 8 12z"/>
+              <path class="art-fire-core" d="M212 28c4 5 6 8 6 12a6 6 0 0 1-12 0c0-4 4-7 6-12z"/>
+            </svg>
+            <a class="card-link" href="https://github.com/leaakrour/firefighter-robots-simulation" target="_blank" rel="noopener noreferrer" aria-label="Firefighter Robots Simulation on GitHub">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="https://github.com/leaakrour/firefighter-robots-simulation" target="_blank" rel="noopener noreferrer">Firefighter Robots Simulation</a>
+            </h3>
+            <p class="card-desc">
+              An object-oriented simulation of firefighting robots on a map: shortest-path planning
+              per robot type, a discrete event scheduler, and a strategy layer coordinating the
+              fleet.
+            </p>
+            <ul class="stack-row"><li>Java</li><li>OOP</li><li>Graph algorithms</li></ul>
+          </div>
+        </li>
+
+        <!-- 6. Brainfuck interpreter -->
+        <li class="card" data-reveal>
+          <div class="card-art">
+            <svg class="art" viewBox="0 0 320 132" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+              <g class="art-cell">
+                <rect x="24" y="58" width="38" height="38" rx="8"/>
+                <rect x="66" y="58" width="38" height="38" rx="8"/>
+                <rect x="108" y="58" width="38" height="38" rx="8"/>
+                <rect x="150" y="58" width="38" height="38" rx="8"/>
+                <rect x="192" y="58" width="38" height="38" rx="8"/>
+                <rect x="234" y="58" width="38" height="38" rx="8"/>
+              </g>
+              <rect class="art-cell-hi" x="108" y="58" width="38" height="38" rx="8"/>
+              <path class="art-ptr" d="M127 34 l12 16h-24z"/>
+              <text class="art-code" x="24" y="30">[ &gt; + + &lt; - ]</text>
+              <path class="art-hair" d="M24 112h248"/>
+            </svg>
+            <a class="card-link" href="https://github.com/leaakrour/brainfuck-interpreter-c" target="_blank" rel="noopener noreferrer" aria-label="Brainfuck Interpreter on GitHub">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            </a>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">
+              <a href="https://github.com/leaakrour/brainfuck-interpreter-c" target="_blank" rel="noopener noreferrer">Brainfuck Interpreter</a>
+            </h3>
+            <p class="card-desc">
+              A complete interpreter for the Brainfuck esoteric language written in C: tape memory
+              model, bracket matching and instruction dispatch.
+            </p>
+            <ul class="stack-row"><li>C</li></ul>
+          </div>
+        </li>
+
+      </ul>
+
+      <h3 class="subsection-title" data-reveal>Other things I have built</h3>
+      <ul class="other-list">
+        <li data-reveal>
+          <a href="https://github.com/leaakrour/open-data-digital-devices-france" target="_blank" rel="noopener noreferrer">
+            <span class="other-name">Open Data Visualization</span>
+            <span class="other-desc">Interactive D3.js visualization of digital device density across France</span>
+            <span class="other-stack">JavaScript</span>
+            <svg class="other-arrow" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7m0 0h-7m7 0v7"/></svg>
+          </a>
+        </li>
+        <li data-reveal>
+          <a href="https://github.com/leaakrour/multithreaded-video-player" target="_blank" rel="noopener noreferrer">
+            <span class="other-name">Multithreaded Video Player</span>
+            <span class="other-desc">Ogg / Theora / Vorbis player with producer-consumer decoding threads</span>
+            <span class="other-stack">C · Pthreads</span>
+            <svg class="other-arrow" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7m0 0h-7m7 0v7"/></svg>
+          </a>
+        </li>
+        <li data-reveal>
+          <a href="https://github.com/leaakrour/mini-shell-c" target="_blank" rel="noopener noreferrer">
+            <span class="other-name">Mini-Shell</span>
+            <span class="other-desc">Unix shell with pipes, redirections, job control and an embedded Scheme interpreter</span>
+            <span class="other-stack">C · Unix</span>
+            <svg class="other-arrow" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7m0 0h-7m7 0v7"/></svg>
+          </a>
+        </li>
+        <li data-reveal>
+          <a href="https://github.com/leaakrour/malloc-allocator-c" target="_blank" rel="noopener noreferrer">
+            <span class="other-name">Malloc Allocator</span>
+            <span class="other-desc">Virtual memory allocator implementing the buddy algorithm</span>
+            <span class="other-stack">C · Memory management</span>
+            <svg class="other-arrow" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7m0 0h-7m7 0v7"/></svg>
+          </a>
+        </li>
+        <li data-reveal>
+          <a href="https://github.com/leaakrour/finite-automata-lexer" target="_blank" rel="noopener noreferrer">
+            <span class="other-name">Finite Automata Lexer</span>
+            <span class="other-desc">Finite state automata applied to lexical analysis</span>
+            <span class="other-stack">Python · Compilers</span>
+            <svg class="other-arrow" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7m0 0h-7m7 0v7"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="section" aria-labelledby="skills-title">
+    <div class="wrap">
+      <h2 class="section-title" id="skills-title" data-reveal><span class="num">04.</span>Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group" data-reveal>
+          <h3>Languages</h3>
+          <ul class="pill-row">
+            <li>Python</li><li>Go</li><li>C</li><li>Java</li><li>SQL</li>
+            <li>TypeScript</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-reveal>
+          <h3>Data &amp; Machine Learning</h3>
+          <ul class="pill-row">
+            <li>Scikit-learn</li><li>TensorFlow</li><li>Pandas</li>
+          </ul>
+        </div>
+        <div class="skill-group" data-reveal>
+          <h3>AI &amp; agent tooling</h3>
+          <ul class="pill-row">
+            <li>Claude Code</li><li>Cursor</li><li>Agent Skills</li>
+            <li>Model Context Protocol (MCP)</li><li>Prompt engineering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFICATIONS ==================== -->
+  <section id="certifications" class="section" aria-labelledby="cert-title">
+    <div class="wrap">
+      <h2 class="section-title" id="cert-title" data-reveal><span class="num">05.</span>Certifications</h2>
+
+      <ul class="cert-grid">
+        <li class="cert-item" data-reveal>
+          <svg class="cert-badge" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="9" r="6"/>
+            <path d="m8.4 14-1.4 7 5-2.6 5 2.6-1.4-7"/>
+            <path d="m9.6 9 1.7 1.7 3.1-3.2"/>
+          </svg>
+          <div>
+            <span class="cert-name">Google Prompting Essentials</span>
+            <span class="cert-issuer">Google Career Certificates</span>
+            <span class="cert-when">Issued <time datetime="2025-07">July 2025</time></span>
+          </div>
+        </li>
+
+        <li class="cert-item" data-reveal>
+          <svg class="cert-badge" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="9" r="6"/>
+            <path d="m8.4 14-1.4 7 5-2.6 5 2.6-1.4-7"/>
+            <path d="m9.6 9 1.7 1.7 3.1-3.2"/>
+          </svg>
+          <div>
+            <span class="cert-name">Google AI Essentials</span>
+            <span class="cert-issuer">Google Career Certificates</span>
+            <span class="cert-when">Issued <time datetime="2025-06">June 2025</time></span>
+          </div>
+        </li>
+
+        <li class="cert-item" data-reveal>
+          <svg class="cert-badge" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="9" r="6"/>
+            <path d="m8.4 14-1.4 7 5-2.6 5 2.6-1.4-7"/>
+            <path d="m9.6 9 1.7 1.7 3.1-3.2"/>
+          </svg>
+          <div>
+            <span class="cert-name">Google Data Analytics Professional Certificate</span>
+            <span class="cert-issuer">Google Career Certificates</span>
+            <span class="cert-when">Issued <time datetime="2025-06">June 2025</time></span>
+          </div>
+        </li>
+
+        <li class="cert-item" data-reveal>
+          <svg class="cert-badge" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="9" r="6"/>
+            <path d="m8.4 14-1.4 7 5-2.6 5 2.6-1.4-7"/>
+            <path d="m9.6 9 1.7 1.7 3.1-3.2"/>
+          </svg>
+          <div>
+            <span class="cert-name">Learning AI Through Visualization</span>
+            <span class="cert-issuer">Columbia University</span>
+            <span class="cert-when">Issued <time datetime="2025-06">June 2025</time></span>
+          </div>
+        </li>
+
+        <li class="cert-item" data-reveal>
+          <svg class="cert-badge" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="9" r="6"/>
+            <path d="m8.4 14-1.4 7 5-2.6 5 2.6-1.4-7"/>
+            <path d="m9.6 9 1.7 1.7 3.1-3.2"/>
+          </svg>
+          <div>
+            <span class="cert-name">Deutsches Sprachdiplom, level B2</span>
+            <span class="cert-issuer">Kultusministerkonferenz</span>
+            <span class="cert-when">Issued <time datetime="2016-06">June 2016</time></span>
+          </div>
+        </li>
+
+        <li class="cert-item" data-reveal>
+          <svg class="cert-badge" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="9" r="6"/>
+            <path d="m8.4 14-1.4 7 5-2.6 5 2.6-1.4-7"/>
+            <path d="m9.6 9 1.7 1.7 3.1-3.2"/>
+          </svg>
+          <div>
+            <span class="cert-name">TOEIC, score 895 / 990</span>
+            <span class="cert-issuer">ETS</span>
+            <span class="cert-when">
+              Issued <time datetime="2024-12">December 2024</time> ·
+              expires <time datetime="2026-12">December 2026</time>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+    <div class="wrap contact-inner">
+      <p class="contact-kicker" data-reveal><span class="num">06.</span>What is next?</p>
+      <h2 class="contact-title" id="contact-title" data-reveal>Get In Touch</h2>
+      <p class="contact-text" data-reveal>
+        I am looking for software engineering roles where I can keep learning and building. My inbox
+        is always open, whether you have a question, an opportunity or just want to say hello.
+      </p>
+      <p data-reveal>
+        <a class="btn btn-primary btn-lg" href="mailto:lea.akrour04@gmail.com">Say hello</a>
+      </p>
+
+      <ul class="contact-links" data-reveal>
+        <li>
+          <a href="mailto:lea.akrour04@gmail.com">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M3 6h18v12H3z"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="m3 7 9 6 9-6"/></svg>
+            lea.akrour04@gmail.com
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/leaakrour" target="_blank" rel="noopener noreferrer">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.72-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            github.com/leaakrour
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/l%C3%A9a-akrour-53918738a" target="_blank" rel="noopener noreferrer">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.4 9.5h5.16V21H2.4V9.5Zm7.2 0h4.95v1.57h.07c.69-1.24 2.38-2.55 4.9-2.55 5.24 0 6.21 3.3 6.21 7.6V21h-5.16v-4.82c0-1.15-.02-2.63-1.66-2.63-1.67 0-1.93 1.25-1.93 2.55V21H9.6V9.5Z"/></svg>
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Designed &amp; built by Léa Akrour</p>
+    <p class="footer-note">Vanilla HTML, CSS and JavaScript, no frameworks.</p>
+  </div>
+</footer>
+
+<a class="to-top" href="#top" aria-label="Back to top">
+  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
