@@ -1114,12 +1114,27 @@ html.js-reveal .section-title.is-visible::after { transform: scaleX(1); }
 @media (max-width: 900px) {
   .nav-toggle { display: flex; }
 
+  /* .nav below is position: fixed, but it sits inside .site-header. Any filter
+     on the header would make it the panel's containing block and crush the
+     panel down to the height of the bar, so the frosted glass goes at the
+     widths where the drawer exists; the background is raised to near-opaque
+     to make up for the missing blur. */
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(241, 231, 214, 0.97);
+  }
+
+  /* The header is sticky, so it is its own stacking context: no z-index can
+     send the panel behind the bar that contains it. The drawer therefore opens
+     *below* the header instead of under it, which keeps the logo and the close
+     button visible and clickable while the menu is open. */
   .nav {
     position: fixed;
-    inset: 0 0 0 auto;
+    inset: var(--header-h) 0 0 auto;
     z-index: 99;
     width: min(320px, 82vw);
-    padding: calc(var(--header-h) + 1.5rem) 1.5rem 2rem;
+    padding: 1.5rem 1.5rem 2rem;
     background: var(--bg-elev);
     border-left: 1px solid var(--line);
     box-shadow: -12px 0 30px rgba(86, 66, 38, 0.18);
